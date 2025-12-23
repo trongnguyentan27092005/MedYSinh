@@ -103,7 +103,7 @@ function formatBotMessage(message) {
     } else {
         // Wrap in paragraphs
         const paragraphs = formatted.split('<br><br>');
-        formatted = paragraphs.map(p => p.trim() ? '<p>' + p.replace(/<br>/g, '<br>') + '</p>' : '').join('');
+        formatted = paragraphs.map(p => p.trim() ? '<p>' + p + '</p>' : '').join('');
     }
     
     return formatted;
