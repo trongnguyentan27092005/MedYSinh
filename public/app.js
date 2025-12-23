@@ -180,7 +180,7 @@ quickButtons.forEach(button => {
     button.addEventListener('click', () => {
         const message = button.getAttribute('data-message');
         messageInput.value = message;
-        chatForm.dispatchEvent(new Event('submit'));
+        chatForm.requestSubmit();
     });
 });
 
